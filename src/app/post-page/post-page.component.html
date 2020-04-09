@@ -1,11 +1,11 @@
 <div *ngIf="post$ | async as post; else loading">
   <div class="post">
-    <div class="header">
+    <div class="post__header">
       <h1>{{ post.title }}</h1>
 
       <button routerLink="/" class="btn btn_link">На главную</button>
     </div>
-    <div class="info">
+    <div class="post__info">
       <div class="strong">{{ post.author }}</div>
       <small>{{ post.date | date:'medium':null:'ru' }}</small>
     </div>

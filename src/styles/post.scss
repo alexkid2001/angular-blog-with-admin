@@ -1,0 +1,14 @@
+.post {
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info {
+    strong {
+      margin-right: 1rem;
+    }
+  }
+}
