@@ -1,0 +1,21 @@
+.text {
+  &_primary {
+    color: $primary-color;
+  }
+
+  &_dark {
+    color: $dark-color;
+  }
+
+  &_success {
+    color: $success-color;
+  }
+
+  &_danger {
+    color: $danger-color;
+  }
+
+  &_center {
+    text-align: center;
+  }
+}

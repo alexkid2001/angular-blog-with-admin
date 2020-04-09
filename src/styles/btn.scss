@@ -1,0 +1,60 @@
+.btn {
+  display: inline-block;
+  background: $light-color;
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+
+  &:disabled {
+    cursor: not-allowed;
+    background: $light-color;
+    color: #111;
+  }
+
+  &_link {
+    background: none;
+    padding: 0;
+    margin: 0;
+
+    &.btn{
+      &_primary {
+        background: transparent;
+        color: $primary-color;
+      }
+
+      &_danger {
+        background: transparent;
+        color: $danger-color;
+      }
+    }
+  }
+
+  &_block {
+    display: block;
+    width: 100%;
+  }
+
+  &_primary {
+    background: $primary-color;
+    color: #fff;
+  }
+
+  &_danger {
+    background: $danger-color;
+    color: #fff;
+  }
+
+  &_success {
+    background: $success-color;
+    color: #fff;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

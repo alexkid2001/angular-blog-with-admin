@@ -1,5 +1,10 @@
-<nav class="navbar main">
+<nav class="navbar navbar_main">
   <h1>Angular Blog</h1>
+  <ul>
+    <li>
+      <a [routerLink]="['/admin', 'dashboard']">Admin</a>
+    </li>
+  </ul>
 </nav>
 <div class="container">
   <router-outlet></router-outlet>

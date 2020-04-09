@@ -1,0 +1,20 @@
+.card {
+  padding: 1rem;
+  border: #ccc 1px dotted;
+  margin: 0.7rem 0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    margin-bottom: .5rem;
+  }
+
+  &__left-block {
+    display: flex;
+    flex-direction: column;
+  }
+}

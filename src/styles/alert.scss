@@ -1,0 +1,57 @@
+.alert-wrap {
+  position: fixed;
+  top: 20px;
+  max-width: 200px;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  z-index: 10;
+
+  .alert {
+    text-align: center;
+    border-radius: 10px;
+  }
+}
+
+.alert {
+  padding: 0.7rem;
+  color: #333;
+  background: $light-color;
+  border: 1px solid transparent;
+
+  &_primary {
+    border-color: $primary-color;
+    background: rgba($primary-color, .8);
+    color: #fff;
+  }
+
+  &_light {
+    border-color: $light-color;
+    background: rgba($light-color, .8);
+    color: #333;
+  }
+
+  &_dark {
+    border-color: $dark-color;
+    background: rgba($dark-color, .8);
+    color: #fff;
+  }
+
+  &_danger {
+    border-color: $danger-color;
+    background: rgba($danger-color, .8);
+    color: #fff;
+  }
+
+  &_warning {
+    border-color: $warning-color;
+    background: rgba($warning-color, .8);
+  }
+
+  &_success {
+    border-color: $success-color;
+    background: rgba($success-color, .8);
+    color: #fff;
+  }
+}

@@ -1,12 +1,13 @@
 <div class="card">
-  <div class="card-header">
+  <div class="card__header">
     <h2>{{ post.title }}</h2>
-    <small>{{ post.date | date: 'dd.MM.yyyy' }}</small>
-  </div>
-  <div>
-    <small>{{ post.author }}</small>
+
+    <div class="card__left-block">
+      <small>{{ post.date | date: 'dd.MM.yyyy' }}</small>
+      <small>{{ post.author }}</small>
+    </div>
   </div>
   <button
     [routerLink]="['/post', post.id]"
-    class="btn btn-dark">Открыть</button>
+    class="btn btn_link btn_primary">Открыть</button>
 </div>
